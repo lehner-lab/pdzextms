@@ -21,21 +21,48 @@ The following software is optional:
 * **[MoCHI](https://github.com/lehner-lab/MoCHI)** (pipeline for pre-processing deep mutational scanning data i.e. FASTQ to counts)
 * **[DiMSum](https://github.com/lehner-lab/DiMSum) v1.2.8** (pipeline for pre-processing deep mutational scanning data i.e. FASTQ to counts)
 
-# Installation Instructions
+# Installation
 
-Open R and enter:
+We recommend using [this yaml file](pdzextms.yaml) to create a dedicated Conda environment with all necessary dependencies (as explained below).
 
-```
-# Install
-if(!require(devtools)) install.packages("devtools")
-devtools::install_github("lehner-lab/pdzextms")
+1. Install the [Conda](https://docs.conda.io/) package/environment management system (if you already have Conda skip to step 2):
 
-# Load
-library(pdzextms)
+   On MacOS, run:
+   ```
+   $ curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+   $ sh Miniconda3-latest-MacOSX-x86_64.sh
+   ```
+   On Linux, run:
+   ```
+   $ curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+   $ sh Miniconda3-latest-Linux-x86_64.sh
+   ```
 
-# Help
-?pdzextms
-```
+   **IMPORTANT:** If in doubt, respond with "yes" to the following question during installation: "Do you wish the installer to initialize Miniconda3 by running conda init?". In this case Conda will modify your shell scripts (*~/.bashrc* or *~/.bash_profile*) to initialize Miniconda3 on startup. Ensure that any future modifications to your *$PATH* variable in your shell scripts occur **before** this code to initialize Miniconda3.
+
+2. Clone the pdzextms GitHub repository:
+   ```
+   $ git clone https://github.com/lehner-lab/pdzextms.git
+   ```
+
+3. Create and activate the pdzextms Conda environment:
+   ```
+   $ conda env create -f pdzextms/pdzextms.yaml
+   $ conda activate pdzextms
+   ```
+
+4. Open R and install pdzextms:
+   ```
+   # Install
+   if(!require(devtools)) install.packages("devtools")
+   devtools::install("pdzextms")
+
+   # Load
+   library(pdzextms)
+
+   # Help
+   ?pdzextms
+   ```
 
 # Required Data
 
