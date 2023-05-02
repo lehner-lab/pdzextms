@@ -47,7 +47,7 @@ We recommend using [this yaml file](pdzextms.yaml) to create a dedicated Conda e
 
 3. Create and activate the pdzextms Conda environment:
    ```
-   $ conda env create -f pdzextms/pdzextms.yaml
+   $ conda env create -f pdzextms/pdzextms.yml
    $ conda activate pdzextms
    ```
 
