@@ -1,0 +1,27 @@
+Package: pdzextms
+Title: Analysis scripts to reproduce the figures and results from PDZ domain extension manuscript
+Version: 0.0.0.9000
+Authors@R: c(
+	person("Cristina", "Hidalgo-Carcedo", email = "cristina.hidalgo.carcedo@gmail.com", role = c("aut")),
+	person("Andre", "Faure", email = "ajfaure@gmail.com", role = c("aut", "cre")))
+Description: "The effects of PDZ domain extensions on energies, energetic couplings and allostery", Hidalgo-Carcedo C & Faure AJ et al., 2023
+Depends: R (>= 3.6.1)
+Imports:
+	bio3d,
+	Biostrings,
+	coin,
+	Cairo,
+	data.table,
+	ggplot2,
+	GGally,
+	hexbin,
+	plot3D,
+	reshape2,
+	RColorBrewer,
+	ROCR,
+	stringr,
+	ggrepel
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.0

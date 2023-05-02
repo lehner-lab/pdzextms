@@ -1,0 +1,26 @@
+name: pdzextms
+channels:
+  - r
+  - anaconda
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - bioconductor-biostrings
+  - cairo
+  - r-base>3.6.1
+  - r-bio3d
+  - r-cairo
+  - r-coin
+  - r-data.table
+  - r-devtools
+  - r-ggally
+  - r-ggplot2
+  - r-ggrepel
+  - r-hexbin
+  - r-plot3d
+  - r-rcolorbrewer
+  - r-reshape2
+  - r-rocr
+  - r-roxygen2
+  - r-stringr
